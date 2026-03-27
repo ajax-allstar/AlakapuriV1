@@ -218,7 +218,7 @@ export function ContactForm() {
           value={fields.message}
           onChange={(event) => updateField("message", event.target.value)}
           className={fieldClass(Boolean(errors.message))}
-          placeholder="Tell us whether you are enquiring about dining, stay, or the premium package."
+          placeholder="Ask about menu items, timing, orders, founder details, or gallery updates."
           aria-invalid={Boolean(errors.message)}
           aria-describedby={errors.message ? "contact-message-error" : undefined}
         />

@@ -5,14 +5,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        surface: "var(--surface)",
-        elevated: "var(--surface-elevated)",
-        primary: "var(--accent-primary)",
-        secondary: "var(--accent-secondary)",
-        highlight: "var(--accent-highlight)",
-        foreground: "var(--text-primary)",
-        muted: "var(--text-secondary)"
+        background: "rgb(var(--background-rgb) / <alpha-value>)",
+        surface: "rgb(var(--surface-rgb) / <alpha-value>)",
+        elevated: "rgb(var(--surface-elevated-rgb) / <alpha-value>)",
+        primary: "rgb(var(--accent-primary-rgb) / <alpha-value>)",
+        secondary: "rgb(var(--accent-secondary-rgb) / <alpha-value>)",
+        highlight: "rgb(var(--accent-highlight-rgb) / <alpha-value>)",
+        foreground: "rgb(var(--text-primary-rgb) / <alpha-value>)",
+        muted: "rgb(var(--text-secondary-rgb) / <alpha-value>)"
       },
       boxShadow: {
         ambient:

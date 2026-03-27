@@ -2,6 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { LinkButton } from "@/components/ui/link-button";
 import { NAV_ITEMS, SECTION_IDS, SITE } from "@/lib/constants";
@@ -40,8 +41,14 @@ export function Navbar() {
             className="group inline-flex items-center gap-4 rounded-full px-2 py-1"
             onClick={closeMenu}
           >
-            <div className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/30 bg-primary/10 text-sm font-bold tracking-[0.22em] text-primary">
-              A
+            <div className="overflow-hidden rounded-full border border-primary/25 bg-black/20">
+              <Image
+                src="/images/brand/alakapuri-logo.png"
+                alt="Alakapuri Restaurant logo"
+                width={48}
+                height={48}
+                className="h-12 w-12 object-cover"
+              />
             </div>
             <div>
               <p className="font-display text-lg tracking-[0.28em] text-[color:var(--text-primary)] transition-colors group-hover:text-primary sm:text-xl">
@@ -69,12 +76,8 @@ export function Navbar() {
           </nav>
 
           <div className="hidden lg:block">
-            <LinkButton
-              href={`#${SECTION_IDS.contact}`}
-              variant="primary"
-              prefillMessage={SITE.stayPrefill}
-            >
-              Enquire Now
+            <LinkButton href={SITE.phoneHref} variant="primary">
+              Call Now
             </LinkButton>
           </div>
 
@@ -120,13 +123,12 @@ export function Navbar() {
 
               <div className="mt-5">
                 <LinkButton
-                  href={`#${SECTION_IDS.contact}`}
+                  href={SITE.phoneHref}
                   variant="primary"
                   className="w-full"
-                  prefillMessage={SITE.stayPrefill}
                   onClick={closeMenu}
                 >
-                  Enquire Now
+                  Call Now
                 </LinkButton>
               </div>
             </div>

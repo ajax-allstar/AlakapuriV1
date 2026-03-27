@@ -17,6 +17,7 @@ import {
   LockKeyhole,
   Mail,
   MapPin,
+  Phone,
   RefreshCcw,
   Search,
   Server,
@@ -35,10 +36,10 @@ export type IconItem = {
 };
 
 export const heroChips = [
-  "Hotel & Restaurant",
-  "Trusted Local Destination",
-  "Family Friendly",
-  "Hospitality Focused"
+  "Since 1983",
+  "All You Can Eat",
+  "Vegan Options",
+  "Delivery Till 10:30 PM"
 ];
 
 export const experienceCards: Array<IconItem & { ctaLabel: string; href: string }> = [
@@ -62,80 +63,106 @@ export const experienceCards: Array<IconItem & { ctaLabel: string; href: string 
 
 export const highlightStats = [
   {
-    title: "Trusted Local Destination",
-    value: "Warmly Known",
-    description: "Recognised in Nedumkunnam for dependable service and genuine hospitality."
+    title: "Service Options",
+    value: "All You Can Eat",
+    description: "The current business listing also highlights vegan-friendly choices."
   },
   {
-    title: "Hotel + Restaurant Experience",
-    value: "Two in One",
-    description: "Dining and stay come together under one polished and welcoming brand."
+    title: "Open Daily",
+    value: "Until 11 PM",
+    description: "Late-evening service helps Alakapuri stay practical for family meals and takeaways."
   },
   {
-    title: "Family Friendly Hospitality",
-    value: "Comfort First",
-    description: "Spaces feel inviting for everyday visitors, families, and group gatherings."
+    title: "Delivery Window",
+    value: "Till 10:30 PM",
+    description: "The restaurant listing shows active delivery support during evening service."
   },
   {
-    title: "Memorable Guest Experience",
-    value: "Refined Care",
-    description: "Every touchpoint is shaped around comfort, courtesy, and local credibility."
+    title: "Price Range",
+    value: "₹1–200",
+    description: "The listing positions Alakapuri as a local, everyday restaurant with broad appeal."
   }
 ];
 
 export const offerings: IconItem[] = [
   {
+    icon: Sparkles,
+    title: "Breakfast & Tiffin",
+    description: "Appam, idli, dosa, chapati, porotta, and quick breakfast favourites for regular visitors."
+  },
+  {
     icon: UtensilsCrossed,
-    title: "Dining Experience",
-    description: "Welcoming restaurant service with food that feels generous, satisfying, and memorable."
+    title: "Kerala Meals",
+    description: "Lunch-friendly options and everyday comfort food suited to Nedumkunnam locals and travellers."
   },
   {
-    icon: Handshake,
-    title: "Local Hospitality",
-    description: "A warm, attentive approach that makes guests feel valued from arrival to farewell."
-  },
-  {
-    icon: BedDouble,
-    title: "Comfortable Stay",
-    description: "Calm, guest-ready spaces designed for convenience, ease, and dependable comfort."
+    icon: BellRing,
+    title: "Biriyani Specials",
+    description: "Chicken biriyani, beef biriyani, and crowd-favourite rice dishes are part of the core appeal."
   },
   {
     icon: UsersRound,
-    title: "Family Friendly Environment",
-    description: "An approachable setting for families looking for comfort, dining, and quality time together."
+    title: "Porotta Specials",
+    description: "Porotta with beef roast and other classic combinations lead the restaurant's signature picks."
   },
   {
     icon: Building2,
-    title: "Group-Friendly Venue",
-    description: "Well suited for shared meals, travel stopovers, and coordinated guest visits."
+    title: "Veg & Vegan Choices",
+    description: "Vegetarian and vegan-friendly dishes help the menu stay practical for mixed groups."
   },
   {
-    icon: ShieldCheck,
-    title: "Trusted Guest Service",
-    description: "Consistent, reliable care grounded in professionalism and local trust."
+    icon: Handshake,
+    title: "Delivery Friendly Service",
+    description: "Phone orders, menu-site browsing, and delivery timing details make ordering more convenient."
   }
 ];
 
 export const diningFeatures: IconItem[] = [
   {
     icon: UtensilsCrossed,
-    title: "Signature Dining Atmosphere",
-    description: "Comfortable interiors and warm lighting create a refined local setting for relaxed meals."
-  },
-  {
-    icon: Sparkles,
-    title: "Quality Preparation",
-    description: "Every meal is presented with care, consistency, and hospitality-led attention to detail."
+    title: "Special Porotta & Beef",
+    description: "One of the strongest brand visuals and likely a signature draw for the restaurant."
   },
   {
     icon: Stars,
-    title: "Memorable Meals",
-    description: "The restaurant experience is built around satisfying food and lasting guest impressions."
+    title: "Special Chicken Biriyani",
+    description: "Rich presentation and familiar local appeal make biriyani an essential featured item."
   },
   {
-    icon: UsersRound,
-    title: "Warm Group Environment",
-    description: "Ideal for families, shared tables, and friendly gatherings that feel easy and welcoming."
+    icon: ShieldCheck,
+    title: "Puttu & Curry",
+    description: "A strong Kerala breakfast identity that helps the website feel locally grounded and authentic."
+  },
+  {
+    icon: Gauge,
+    title: "Masala Dosa",
+    description: "A familiar, approachable favourite that broadens the menu appeal for families and quick visits."
+  }
+];
+
+export const menuBoards = [
+  {
+    src: "/images/menu/menu-board-dark.png",
+    alt: "Dark menu board for Alakapuri Restaurant",
+    label: "Menu Board"
+  },
+  {
+    src: "/images/menu/menu-board-classic.png",
+    alt: "Classic menu board for Hotel Alakapuri",
+    label: "Classic Menu"
+  }
+];
+
+export const founders = [
+  {
+    role: "Founder",
+    name: "Example Founder",
+    note: "Replace this with the real founder name and photo when available."
+  },
+  {
+    role: "Co-Founder",
+    name: "Example Co-Founder",
+    note: "Replace this with the real co-founder name and photo when available."
   }
 ];
 
@@ -326,51 +353,51 @@ export const whyChooseItems: IconItem[] = [
 
 export const galleryItems = [
   {
-    src: "/images/gallery/food-platter.svg",
-    alt: "Food presentation at Hotel Alakapuri restaurant",
-    label: "Food"
+    src: "/images/brand/alakapuri-logo.png",
+    alt: "Alakapuri Restaurant brand poster",
+    label: "Branding"
   },
   {
-    src: "/images/gallery/ambient-evening.svg",
-    alt: "Warm ambience at Hotel Alakapuri",
-    label: "Ambience"
+    src: "/images/gallery/porotta-beef.png",
+    alt: "Porotta and beef special from Alakapuri Restaurant",
+    label: "Porotta & Beef"
   },
   {
-    src: "/images/gallery/exterior-facade.svg",
-    alt: "Exterior view concept for Hotel Alakapuri",
-    label: "Exterior"
+    src: "/images/gallery/puttu-curry.png",
+    alt: "Puttu and curry special from Alakapuri Restaurant",
+    label: "Puttu & Curry"
   },
   {
-    src: "/images/gallery/dining-hall.svg",
-    alt: "Dining space concept at Hotel Alakapuri",
-    label: "Dining"
+    src: "/images/gallery/chicken-biriyani.png",
+    alt: "Chicken biriyani special from Alakapuri Restaurant",
+    label: "Chicken Biriyani"
   },
   {
-    src: "/images/gallery/reception-lounge.svg",
-    alt: "Reception lounge concept at Hotel Alakapuri",
-    label: "Reception"
+    src: "/images/gallery/masala-dosa.png",
+    alt: "Masala dosa special from Alakapuri Restaurant",
+    label: "Masala Dosa"
   },
   {
-    src: "/images/gallery/stay-comfort.svg",
-    alt: "Stay experience concept at Hotel Alakapuri",
-    label: "Stay Experience"
+    src: "/images/menu/menu-board-dark.png",
+    alt: "Menu board image from Alakapuri Restaurant",
+    label: "Menu"
   }
 ];
 
 export const testimonials = [
   {
-    quote: "A welcoming place for both dining and stay. The experience feels warm, organised, and genuinely local.",
-    guest: "Family Traveller",
+    quote: "Porotta, biriyani, and Kerala-style favourites make this feel like a proper local stop.",
+    guest: "Restaurant Example",
     context: "Guest Impression"
   },
   {
-    quote: "Great hospitality and a pleasant experience. It feels dependable whether you are stopping for a meal or planning a stay.",
-    guest: "Local Visitor",
+    quote: "The menu range and familiar specials make it easy to recommend for family meals and quick orders.",
+    guest: "Local Example",
     context: "Dining Impression"
   },
   {
-    quote: "A trusted local stop for comfort and food. The atmosphere feels calm, friendly, and thoughtfully handled.",
-    guest: "Returning Guest",
-    context: "Stay Impression"
+    quote: "The business identity now feels much closer to the real restaurant brand shown in the uploaded visuals.",
+    guest: "Brand Example",
+    context: "Brand Impression"
   }
 ];

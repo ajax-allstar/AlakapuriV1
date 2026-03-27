@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MapPin, ShieldCheck, Sparkles } from "lucide-react";
+import { BellRing, MapPin, Phone, UtensilsCrossed } from "lucide-react";
 import { AnimatedInView } from "@/components/ui/animated-in-view";
 import { LinkButton } from "@/components/ui/link-button";
 import { heroChips } from "@/lib/data";
@@ -27,16 +27,16 @@ export function HeroSection() {
 
             <AnimatedInView delay={0.14}>
               <h1 className="display-title text-balance pt-8">
-                Stay Comfortably.
-                <span className="block text-gradient-gold">Dine Exceptionally.</span>
+                Kerala favourites, biriyani specials,
+                <span className="block text-gradient-gold">and Alakapuri classics.</span>
               </h1>
             </AnimatedInView>
 
             <AnimatedInView delay={0.2}>
               <p className="muted-copy max-w-2xl pt-6">
-                Hotel Alakapuri is a trusted destination in Nedumkunnam, Kerala for warm
-                hospitality, memorable dining, and a welcoming stay experience that feels both
-                local and premium.
+                Hotel Alakapuri is the restaurant brand shown in your real uploads: a local
+                favourite in Nedumkunnam and Karukachal known for porotta specials, biriyani,
+                Kerala meals, and familiar everyday dining since 1983.
               </p>
             </AnimatedInView>
 
@@ -55,16 +55,11 @@ export function HeroSection() {
 
             <AnimatedInView delay={0.32}>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <LinkButton href={`#${SECTION_IDS.dining}`} size="large" prefillMessage={SITE.diningPrefill}>
-                  Explore Dining
+                <LinkButton href={`#${SECTION_IDS.menu}`} size="large" prefillMessage={SITE.diningPrefill}>
+                  Explore Menu
                 </LinkButton>
-                <LinkButton
-                  href={`#${SECTION_IDS.stay}`}
-                  variant="secondary"
-                  size="large"
-                  prefillMessage={SITE.stayPrefill}
-                >
-                  Enquire About Stay
+                <LinkButton href={SITE.phoneHref} variant="secondary" size="large">
+                  Call Restaurant
                 </LinkButton>
               </div>
             </AnimatedInView>
@@ -73,33 +68,33 @@ export function HeroSection() {
               <div className="mt-12 grid gap-4 sm:grid-cols-3">
                 <div className="luxury-card p-4">
                   <div className="relative z-10 flex items-start gap-3">
-                    <ShieldCheck className="mt-1 h-5 w-5 text-primary" aria-hidden="true" />
+                    <UtensilsCrossed className="mt-1 h-5 w-5 text-primary" aria-hidden="true" />
                     <div>
-                      <p className="text-sm font-semibold">Local trust</p>
+                      <p className="text-sm font-semibold">Since 1983</p>
                       <p className="mt-1 text-sm text-[color:var(--text-secondary)]">
-                        Known for warm, dependable hospitality.
+                        A long-running local restaurant identity, not a stay destination.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="luxury-card p-4">
                   <div className="relative z-10 flex items-start gap-3">
-                    <Sparkles className="mt-1 h-5 w-5 text-primary" aria-hidden="true" />
+                    <BellRing className="mt-1 h-5 w-5 text-primary" aria-hidden="true" />
                     <div>
-                      <p className="text-sm font-semibold">Refined experience</p>
+                      <p className="text-sm font-semibold">Open until 11 PM</p>
                       <p className="mt-1 text-sm text-[color:var(--text-secondary)]">
-                        Dining and stay are designed with care.
+                        Delivery currently listed until 10:30 PM.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="luxury-card p-4">
                   <div className="relative z-10 flex items-start gap-3">
-                    <MapPin className="mt-1 h-5 w-5 text-primary" aria-hidden="true" />
+                    <Phone className="mt-1 h-5 w-5 text-primary" aria-hidden="true" />
                     <div>
-                      <p className="text-sm font-semibold">Nedumkunnam</p>
+                      <p className="text-sm font-semibold">{SITE.phoneDisplay}</p>
                       <p className="mt-1 text-sm text-[color:var(--text-secondary)]">
-                        Rooted in Kerala hospitality.
+                        Call for menu details, orders, and timings.
                       </p>
                     </div>
                   </div>
@@ -114,10 +109,10 @@ export function HeroSection() {
                 <div className="grid gap-5 sm:grid-cols-[1.2fr_0.8fr]">
                   <div className="luxury-card overflow-hidden">
                     <Image
-                      src="/images/hero/alakapuri-hero.svg"
-                      alt="Premium visual concept for Hotel Alakapuri"
-                      width={1200}
-                      height={900}
+                      src="/images/brand/alakapuri-logo.png"
+                      alt="Real Alakapuri Restaurant branding"
+                      width={768}
+                      height={768}
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -126,52 +121,50 @@ export function HeroSection() {
                     <div className="luxury-card p-5">
                       <div className="relative z-10">
                         <p className="text-xs uppercase tracking-[0.34em] text-primary">
-                          Hotel & Restaurant
+                          Restaurant Since 1983
                         </p>
-                        <h2 className="pt-3 text-2xl">Premium local hospitality</h2>
+                        <h2 className="pt-3 text-2xl">Real branding, real dishes</h2>
                         <p className="mt-3 text-sm leading-6 text-[color:var(--text-secondary)]">
-                          Thoughtful dining, welcoming comfort, and a polished guest-first identity.
+                          This version uses your uploaded Alakapuri visuals instead of the placeholder seal.
                         </p>
                       </div>
                     </div>
-                    <div className="luxury-card p-5">
-                      <div className="relative z-10 space-y-3 text-sm text-[color:var(--text-secondary)]">
-                        <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/15 px-4 py-3">
-                          <span>Dining atmosphere</span>
-                          <span className="text-primary">Warm</span>
-                        </div>
-                        <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/15 px-4 py-3">
-                          <span>Stay comfort</span>
-                          <span className="text-primary">Calm</span>
-                        </div>
-                        <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/15 px-4 py-3">
-                          <span>Guest care</span>
-                          <span className="text-primary">Trusted</span>
-                        </div>
-                      </div>
+                    <div className="luxury-card overflow-hidden">
+                      <Image
+                        src="/images/gallery/porotta-beef.png"
+                        alt="Porotta and beef special from Alakapuri"
+                        width={768}
+                        height={768}
+                        className="h-full w-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
 
                 <div className="grid gap-5 sm:grid-cols-2">
-                  <div className="luxury-card p-5">
-                    <div className="relative z-10">
-                      <p className="text-sm uppercase tracking-[0.3em] text-primary">
-                        Dining Focus
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-[color:var(--text-primary)]">
-                        Family meals, friendly gatherings, and food served with consistent warmth.
-                      </p>
-                    </div>
+                  <div className="luxury-card overflow-hidden">
+                    <Image
+                      src="/images/gallery/chicken-biriyani.png"
+                      alt="Chicken biriyani special from Alakapuri"
+                      width={768}
+                      height={768}
+                      className="h-full w-full object-cover"
+                    />
                   </div>
                   <div className="luxury-card p-5">
-                    <div className="relative z-10">
-                      <p className="text-sm uppercase tracking-[0.3em] text-primary">
-                        Stay Focus
-                      </p>
-                      <p className="mt-3 text-lg leading-8 text-[color:var(--text-primary)]">
-                        A welcoming place to pause, settle in, and experience reliable hospitality.
-                      </p>
+                    <div className="relative z-10 space-y-3 text-sm text-[color:var(--text-secondary)]">
+                      <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/15 px-4 py-3">
+                        <span>Menu site</span>
+                        <span className="text-primary">Live</span>
+                      </div>
+                      <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/15 px-4 py-3">
+                        <span>Service style</span>
+                        <span className="text-primary">All You Can Eat</span>
+                      </div>
+                      <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/15 px-4 py-3">
+                        <span>Price per person</span>
+                        <span className="text-primary">₹1–200</span>
+                      </div>
                     </div>
                   </div>
                 </div>

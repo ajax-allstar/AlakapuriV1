@@ -1,15 +1,16 @@
+import { SECTION_IDS } from "@/lib/constants";
 import { GalleryCard } from "@/components/ui/gallery-card";
 import { SectionHeader } from "@/components/ui/section-header";
 import { galleryItems } from "@/lib/data";
 
 export function GallerySection() {
   return (
-    <section className="section-space">
+    <section id={SECTION_IDS.gallery} className="section-space">
       <div className="section-shell">
         <SectionHeader
-          eyebrow="Gallery Showcase"
-          title="Organised placeholders for food, ambience, exterior, reception, and stay."
-          description="The gallery uses structured image paths under /public/images so the visual direction can be upgraded later without changing section logic. For now it still feels polished, animated, and purposeful."
+          eyebrow="Photo Gallery"
+          title="The current website uses your real uploads for dishes, logo, and menu visuals."
+          description="These are the visuals you provided. Real shop photos can be swapped in later without changing the section structure."
           align="center"
         />
 

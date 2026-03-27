@@ -9,15 +9,15 @@ export function CtaSection() {
           <div className="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.32em] text-primary">Final CTA</p>
-              <h2 className="section-title pt-4 text-balance">Plan Your Alakapuri Experience</h2>
+              <h2 className="section-title pt-4 text-balance">Visit Alakapuri or call for today&apos;s specials</h2>
               <p className="muted-copy pt-5">
-                Visit, dine, stay, or enquire with confidence. Hotel Alakapuri is positioned as a
-                warm local hospitality destination with a premium digital presence to match.
+                The homepage now reflects the real restaurant direction: menu-led, visual, local,
+                and easy to contact.
               </p>
             </div>
 
-            <LinkButton href="#contact" size="large" prefillMessage={SITE.stayPrefill}>
-              Contact Us Today
+            <LinkButton href={SITE.phoneHref} size="large">
+              Call Restaurant
             </LinkButton>
           </div>
         </div>

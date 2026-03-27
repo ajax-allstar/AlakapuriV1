@@ -3,21 +3,22 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Hotel Alakapuri | Restaurant & Hotel in Nedumkunnam, Kerala",
+  title: "Hotel Alakapuri | Restaurant in Nedumkunnam, Kerala",
   description:
-    "Discover Hotel Alakapuri, a trusted restaurant and hotel in Nedumkunnam, Kerala, offering warm hospitality, memorable dining, and a comfortable guest experience.",
+    "Discover Hotel Alakapuri, a restaurant in Nedumkunnam known for porotta, biriyani, Kerala meals, and local favourites since 1983.",
   keywords: [
     "Hotel Alakapuri",
     "restaurant in Nedumkunnam",
-    "hotel in Nedumkunnam",
-    "hotel and restaurant Kerala",
-    "family dining Kerala",
-    "hospitality in Nedumkunnam"
+    "Alakapuri Restaurant",
+    "biriyani Nedumkunnam",
+    "porotta beef Nedumkunnam",
+    "Kerala meals Karukachal",
+    "family restaurant Nedumkunnam"
   ],
   openGraph: {
-    title: "Hotel Alakapuri | Restaurant & Hotel in Nedumkunnam, Kerala",
+    title: "Hotel Alakapuri | Restaurant in Nedumkunnam, Kerala",
     description:
-      "A premium hospitality destination in Nedumkunnam, Kerala for elegant dining, welcoming stays, and trusted local service.",
+      "A local restaurant in Nedumkunnam serving Kerala favourites, biriyani, porotta specials, and everyday meals.",
     type: "website"
   }
 };

@@ -12,8 +12,8 @@ export function Footer() {
               {SITE.subtitle}
             </p>
             <p className="muted-copy mt-5 max-w-xl text-[0.98rem]">
-              Hotel Alakapuri brings together dining, stay, and trusted local hospitality in
-              Nedumkunnam with a premium, welcoming identity.
+              Hotel Alakapuri is a long-running restaurant in Nedumkunnam serving local favourites,
+              biriyani, porotta specials, and everyday Kerala meals with familiar appeal.
             </p>
           </div>
 
@@ -43,15 +43,15 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href={SITE.emailHref} className="hover:text-[color:var(--text-primary)]">
-                  {SITE.emailDisplay}
+                <a href={SITE.menuUrl} className="hover:text-[color:var(--text-primary)]">
+                  {SITE.menuDisplay}
                 </a>
               </li>
             </ul>
 
             <div className="mt-6">
-              <LinkButton href="#contact" variant="outline">
-                Contact Us
+              <LinkButton href={SITE.phoneHref} variant="outline">
+                Call Restaurant
               </LinkButton>
             </div>
           </div>

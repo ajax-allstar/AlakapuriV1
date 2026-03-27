@@ -7,9 +7,9 @@ export function OfferingsSection() {
     <section className="section-space">
       <div className="section-shell">
         <SectionHeader
-          eyebrow="What We Offer"
-          title="Every section supports the core promise of dining, hospitality, and stay."
-          description="The offering mix is intentionally practical and premium: useful service pillars, polished presentation, and clear messaging that tells guests exactly why Alakapuri feels dependable."
+          eyebrow="Menu Categories"
+          title="A clearer restaurant menu structure based on the uploaded boards."
+          description="The site now highlights the types of food people are likely looking for first: breakfast, meals, biriyani, porotta, veg choices, and delivery-friendly ordering."
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

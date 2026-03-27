@@ -3,14 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --background: #0f0f10;
-  --surface: #17181b;
-  --surface-elevated: #1f2024;
-  --accent-primary: #c89b3c;
-  --accent-secondary: #8b1e1e;
-  --accent-highlight: #e0b15a;
-  --text-primary: #f5f1e8;
-  --text-secondary: #bdb6aa;
+  --background-rgb: 15 15 16;
+  --background: rgb(var(--background-rgb));
+  --surface-rgb: 23 24 27;
+  --surface: rgb(var(--surface-rgb));
+  --surface-elevated-rgb: 31 32 36;
+  --surface-elevated: rgb(var(--surface-elevated-rgb));
+  --accent-primary-rgb: 200 155 60;
+  --accent-primary: rgb(var(--accent-primary-rgb));
+  --accent-secondary-rgb: 139 30 30;
+  --accent-secondary: rgb(var(--accent-secondary-rgb));
+  --accent-highlight-rgb: 224 177 90;
+  --accent-highlight: rgb(var(--accent-highlight-rgb));
+  --text-primary-rgb: 245 241 232;
+  --text-primary: rgb(var(--text-primary-rgb));
+  --text-secondary-rgb: 189 182 170;
+  --text-secondary: rgb(var(--text-secondary-rgb));
   --border-soft: rgba(255, 255, 255, 0.08);
   --font-display: "Playfair Display", Georgia, serif;
   --font-body: "Manrope", "DM Sans", system-ui, sans-serif;

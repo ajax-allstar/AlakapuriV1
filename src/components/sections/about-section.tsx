@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BedDouble, MapPin, UtensilsCrossed } from "lucide-react";
+import { Clock3, MapPin, Phone, UtensilsCrossed } from "lucide-react";
 import { AnimatedInView } from "@/components/ui/animated-in-view";
 import { SectionHeader } from "@/components/ui/section-header";
 import { SECTION_IDS, SITE } from "@/lib/constants";
@@ -12,21 +12,20 @@ export function AboutSection() {
           <div>
             <SectionHeader
               eyebrow="Brand Identity"
-              title="A trusted Alakapuri experience shaped by food, comfort, and local warmth."
-              description="Hotel Alakapuri brings together a destination for satisfying dining and a place for welcoming hospitality and stay. The brand is rooted in local trust, approachable service, memorable atmosphere, and a guest experience that feels refined without losing its warmth."
+              title="The website now reflects the real Alakapuri restaurant brand instead of a hotel-with-stay concept."
+              description="Your uploaded logo, dish posters, and menu boards clearly show Alakapuri as a restaurant business. This section shifts the positioning to local food, family dining, and familiar Kerala favourites instead of accommodation."
             />
 
             <AnimatedInView delay={0.1}>
               <div className="mt-8 space-y-5">
                 <p className="muted-copy">
-                  Positioned in Nedumkunnam, Hotel Alakapuri is designed to feel credible,
-                  comforting, and polished. The restaurant side focuses on quality meals, relaxed
-                  group dining, and a familiar local appeal. The hotel side highlights convenience,
-                  calm, and thoughtful care for guests who want a dependable stay.
+                  Based on your latest instructions and the real uploads, Alakapuri is being
+                  presented as a restaurant with menu variety, strong local recall, and practical
+                  details like phone, business-site menu, hours, and service options.
                 </p>
                 <p className="muted-copy">
-                  Together, these two identities create a complete hospitality destination that
-                  feels memorable, family-friendly, and distinctly local.
+                  The visual system stays dark, warm, and gold-led, but the messaging now centres on
+                  food, signature dishes, and the everyday restaurant identity that people already know.
                 </p>
               </div>
             </AnimatedInView>
@@ -37,10 +36,10 @@ export function AboutSection() {
               <div className="relative z-10 grid gap-5">
                 <div className="luxury-card overflow-hidden">
                   <Image
-                    src="/images/brand/alakapuri-seal.svg"
-                    alt="Hotel Alakapuri brand seal concept"
-                    width={1200}
-                    height={800}
+                    src="/images/brand/alakapuri-logo.png"
+                    alt="Real Alakapuri Restaurant branding"
+                    width={768}
+                    height={768}
                     className="h-full w-full object-cover"
                   />
                 </div>
@@ -48,23 +47,23 @@ export function AboutSection() {
                 <div className="grid gap-4 sm:grid-cols-3">
                   <div className="rounded-[24px] border border-white/10 bg-black/15 p-4">
                     <UtensilsCrossed className="h-5 w-5 text-primary" aria-hidden="true" />
-                    <p className="mt-3 text-sm font-semibold">Food quality</p>
+                    <p className="mt-3 text-sm font-semibold">Restaurant identity</p>
                     <p className="mt-2 text-sm leading-6 text-[color:var(--text-secondary)]">
-                      Dining shaped by warmth, consistency, and local comfort.
+                      Built around dishes, menu boards, and familiar local food imagery.
                     </p>
                   </div>
                   <div className="rounded-[24px] border border-white/10 bg-black/15 p-4">
-                    <BedDouble className="h-5 w-5 text-primary" aria-hidden="true" />
-                    <p className="mt-3 text-sm font-semibold">Welcoming stay</p>
+                    <Clock3 className="h-5 w-5 text-primary" aria-hidden="true" />
+                    <p className="mt-3 text-sm font-semibold">{SITE.hoursDisplay}</p>
                     <p className="mt-2 text-sm leading-6 text-[color:var(--text-secondary)]">
-                      Comfort-led hospitality for travellers and family guests.
+                      Service details now match the real business listing.
                     </p>
                   </div>
                   <div className="rounded-[24px] border border-white/10 bg-black/15 p-4">
-                    <MapPin className="h-5 w-5 text-primary" aria-hidden="true" />
-                    <p className="mt-3 text-sm font-semibold">{SITE.shortLocation}</p>
+                    <Phone className="h-5 w-5 text-primary" aria-hidden="true" />
+                    <p className="mt-3 text-sm font-semibold">{SITE.phoneDisplay}</p>
                     <p className="mt-2 text-sm leading-6 text-[color:var(--text-secondary)]">
-                      A location identity rooted in Kerala trust and familiarity.
+                      Primary contact number shown in the uploaded materials.
                     </p>
                   </div>
                 </div>

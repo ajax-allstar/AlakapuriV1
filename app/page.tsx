@@ -1,19 +1,14 @@
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { AboutSection } from "@/components/sections/about-section";
-import { BenefitsSection } from "@/components/sections/benefits-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { CtaSection } from "@/components/sections/cta-section";
 import { DiningSection } from "@/components/sections/dining-section";
+import { FoundersSection } from "@/components/sections/founders-section";
 import { GallerySection } from "@/components/sections/gallery-section";
 import { HeroSection } from "@/components/sections/hero-section";
 import { HighlightsSection } from "@/components/sections/highlights-section";
 import { OfferingsSection } from "@/components/sections/offerings-section";
-import { PackageSection } from "@/components/sections/package-section";
-import { StaySection } from "@/components/sections/stay-section";
-import { TestimonialsSection } from "@/components/sections/testimonials-section";
-import { WhyChooseSection } from "@/components/sections/why-choose-section";
-import { SplitFeatureSection } from "@/components/ui/split-feature-section";
 
 export default function HomePage() {
   return (
@@ -31,16 +26,11 @@ export default function HomePage() {
       <main id="main-content">
         <HeroSection />
         <AboutSection />
-        <SplitFeatureSection />
         <HighlightsSection />
         <OfferingsSection />
         <DiningSection />
-        <StaySection />
-        <PackageSection />
-        <BenefitsSection />
-        <WhyChooseSection />
         <GallerySection />
-        <TestimonialsSection />
+        <FoundersSection />
         <ContactSection />
         <CtaSection />
       </main>
