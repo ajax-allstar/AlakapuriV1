@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { HTMLAttributes, ReactNode } from "react";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
-type AnimatedInViewProps = HTMLAttributes<HTMLDivElement> & {
+type AnimatedInViewProps = Omit<ComponentPropsWithoutRef<typeof motion.div>, "children"> & {
   children: ReactNode;
   delay?: number;
   y?: number;

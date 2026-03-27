@@ -43,7 +43,7 @@ export function ContactForm() {
 
       setFields((current) => ({
         ...current,
-        message: detail.message
+        message: detail.message ?? ""
       }));
       setIsSuccess(false);
       setErrors((current) => {
