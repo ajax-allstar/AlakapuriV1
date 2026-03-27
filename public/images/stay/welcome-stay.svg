@@ -1,0 +1,28 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="44" fill="#151517"/>
+  <rect x="48" y="48" width="1104" height="764" rx="32" fill="url(#paint0_linear)"/>
+  <circle cx="954" cy="188" r="126" fill="#E0B15A" fill-opacity="0.16"/>
+  <circle cx="270" cy="676" r="144" fill="#8B1E1E" fill-opacity="0.2"/>
+  <rect x="124" y="138" width="470" height="274" rx="30" fill="#1F2024"/>
+  <rect x="624" y="138" width="428" height="386" rx="30" fill="#20120F"/>
+  <rect x="124" y="446" width="470" height="220" rx="30" fill="#20120F"/>
+  <rect x="624" y="554" width="428" height="112" rx="30" fill="#17181B"/>
+  <text x="166" y="228" fill="#F5F1E8" font-family="Georgia, serif" font-size="64" font-weight="700">Stay</text>
+  <text x="166" y="304" fill="#C89B3C" font-family="Georgia, serif" font-size="72" font-weight="700">Experience</text>
+  <text x="166" y="364" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="24">Comfort, calm, and thoughtful hospitality</text>
+  <text x="166" y="398" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="24">for families and travellers.</text>
+  <text x="666" y="240" fill="#F5F1E8" font-family="Arial, sans-serif" font-size="28" font-weight="700">Welcoming comfort</text>
+  <text x="666" y="286" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">A stay experience that feels calm,</text>
+  <text x="666" y="318" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">reliable, and guest-focused.</text>
+  <text x="166" y="536" fill="#F5F1E8" font-family="Arial, sans-serif" font-size="30" font-weight="700">Hospitality First</text>
+  <text x="166" y="582" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">A welcoming environment designed to support</text>
+  <text x="166" y="614" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">confidence, convenience, and rest.</text>
+  <text x="666" y="626" fill="#C89B3C" font-family="Arial, sans-serif" font-size="22" font-weight="700">COMFORTABLE • WELCOMING • RELIABLE</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="82" y1="72" x2="1084" y2="788" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16181C"/>
+      <stop offset="0.56" stop-color="#111214"/>
+      <stop offset="1" stop-color="#221311"/>
+    </linearGradient>
+  </defs>
+</svg>

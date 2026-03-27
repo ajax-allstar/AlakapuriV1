@@ -1,0 +1,12 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="700" rx="34" fill="#131416"/>
+  <rect x="100" y="110" width="700" height="470" rx="28" fill="#1A1B1F"/>
+  <rect x="154" y="190" width="170" height="170" rx="22" fill="#231610"/>
+  <rect x="364" y="190" width="170" height="170" rx="22" fill="#231610"/>
+  <rect x="574" y="190" width="170" height="170" rx="22" fill="#231610"/>
+  <rect x="220" y="408" width="460" height="96" rx="20" fill="#24262C"/>
+  <circle cx="238" cy="164" r="24" fill="#E0B15A"/>
+  <circle cx="448" cy="164" r="24" fill="#E0B15A"/>
+  <circle cx="658" cy="164" r="24" fill="#E0B15A"/>
+  <text x="450" y="622" fill="#F5F1E8" font-family="Georgia, serif" font-size="44" font-weight="700" text-anchor="middle">Dining Hall</text>
+</svg>
