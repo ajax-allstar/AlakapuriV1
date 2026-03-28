@@ -1,0 +1,4 @@
+myenv/
+*.deb
+*.pdf
+__pycache__/
