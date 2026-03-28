@@ -1,0 +1,31 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#141416"/>
+  <rect x="48" y="48" width="1104" height="804" rx="36" fill="url(#paint0_linear)"/>
+  <rect x="110" y="124" width="520" height="320" rx="28" fill="#1F2024" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="670" y="124" width="420" height="180" rx="28" fill="#211510"/>
+  <rect x="670" y="328" width="420" height="312" rx="28" fill="#191B1E"/>
+  <rect x="110" y="478" width="520" height="162" rx="28" fill="#231710"/>
+  <rect x="110" y="664" width="980" height="124" rx="28" fill="#17181B"/>
+  <text x="146" y="214" fill="#F5F1E8" font-family="Georgia, serif" font-size="56" font-weight="700">HOTEL</text>
+  <text x="146" y="286" fill="#C89B3C" font-family="Georgia, serif" font-size="88" font-weight="700">ALAKAPURI</text>
+  <text x="146" y="350" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="28">Where warm hospitality meets memorable dining.</text>
+  <text x="710" y="202" fill="#F5F1E8" font-family="Arial, sans-serif" font-size="28" font-weight="700">Nedumkunnam, Kerala</text>
+  <text x="710" y="242" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">Hotel &amp; Restaurant</text>
+  <text x="710" y="414" fill="#E0B15A" font-family="Georgia, serif" font-size="42" font-weight="700">Stay Comfortably</text>
+  <text x="710" y="474" fill="#F5F1E8" font-family="Georgia, serif" font-size="42" font-weight="700">Dine Exceptionally</text>
+  <text x="710" y="536" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">Premium local hospitality with a restaurant</text>
+  <text x="710" y="570" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">experience and welcoming stay environment.</text>
+  <text x="146" y="562" fill="#F5F1E8" font-family="Georgia, serif" font-size="36" font-weight="700">Dining warmth</text>
+  <text x="146" y="608" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">Family friendly atmosphere, memorable meals,</text>
+  <text x="146" y="638" fill="#BDB6AA" font-family="Arial, sans-serif" font-size="22">and a trusted local guest experience.</text>
+  <text x="146" y="738" fill="#C89B3C" font-family="Arial, sans-serif" font-size="22" font-weight="700">TRUSTED LOCAL DESTINATION</text>
+  <text x="520" y="738" fill="#C89B3C" font-family="Arial, sans-serif" font-size="22" font-weight="700">HOTEL &amp; RESTAURANT</text>
+  <text x="864" y="738" fill="#C89B3C" font-family="Arial, sans-serif" font-size="22" font-weight="700">FAMILY FRIENDLY</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="90" y1="78" x2="1080" y2="846" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18191D"/>
+      <stop offset="0.45" stop-color="#111214"/>
+      <stop offset="1" stop-color="#220F0F"/>
+    </linearGradient>
+  </defs>
+</svg>

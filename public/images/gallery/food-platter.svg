@@ -1,0 +1,10 @@
+<svg width="900" height="700" viewBox="0 0 900 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="700" rx="34" fill="#20130F"/>
+  <circle cx="450" cy="350" r="220" fill="#17181B"/>
+  <circle cx="450" cy="350" r="164" fill="#2A1B12" stroke="#C89B3C" stroke-width="3"/>
+  <circle cx="378" cy="308" r="26" fill="#E0B15A"/>
+  <circle cx="520" cy="282" r="20" fill="#8B1E1E"/>
+  <circle cx="534" cy="402" r="28" fill="#E0B15A"/>
+  <circle cx="356" cy="408" r="22" fill="#BDB6AA"/>
+  <text x="450" y="620" fill="#F5F1E8" font-family="Georgia, serif" font-size="46" font-weight="700" text-anchor="middle">Food Presentation</text>
+</svg>
