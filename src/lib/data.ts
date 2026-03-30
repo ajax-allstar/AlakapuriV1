@@ -156,7 +156,7 @@ export const menuBoards = [
 export const founders = [
   {
     role: "Founder",
-    name: "Example Founder",
+    name: "Abhijith S",
     note: "Replace this with the real founder name and details when available."
   },
   {
