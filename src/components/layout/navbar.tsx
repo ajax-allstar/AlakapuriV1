@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { LinkButton } from "@/components/ui/link-button";
 import { NAV_ITEMS, SITE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -45,11 +46,7 @@ export function Navbar() {
   return (
     <motion.header
       initial={false}
-      animate={{
-        backgroundColor: isScrolled ? "rgba(15, 15, 16, 0.82)" : "rgba(15, 15, 16, 0.35)",
-        borderColor: isScrolled ? "rgba(255,255,255,0.09)" : "rgba(255,255,255,0.04)"
-      }}
-      className="fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl"
+      className={cn("nav-surface fixed inset-x-0 top-0 z-50 border-b backdrop-blur-xl", isScrolled && "scrolled")}
     >
       <div className="section-shell">
         <div className="flex h-20 items-center justify-between gap-4">
@@ -92,7 +89,8 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden lg:block">
+          <div className="hidden items-center gap-3 lg:flex">
+            <ThemeToggle />
             <LinkButton href={SITE.phoneHref} variant="primary">
               Call Now
             </LinkButton>
@@ -119,7 +117,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.2 }}
-            className="border-t border-white/10 bg-[rgba(10,10,11,0.96)] lg:hidden"
+            className="nav-drawer border-t lg:hidden"
           >
             <div className="section-shell py-6">
               <nav className="flex flex-col gap-2" aria-label="Mobile primary">
@@ -138,11 +136,12 @@ export function Navbar() {
                 ))}
               </nav>
 
-              <div className="mt-5">
+              <div className="mt-5 flex items-center justify-between gap-4">
+                <ThemeToggle />
                 <LinkButton
                   href={SITE.phoneHref}
                   variant="primary"
-                  className="w-full"
+                  className="flex-1"
                   onClick={closeMenu}
                 >
                   Call Now

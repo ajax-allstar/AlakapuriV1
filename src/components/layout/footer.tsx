@@ -4,7 +4,7 @@ import { NAV_ITEMS, SITE } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black/30 py-12">
+    <footer className="site-footer border-t py-12">
       <div className="section-shell">
         <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr_0.9fr]">
           <div>

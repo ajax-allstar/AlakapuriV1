@@ -13,7 +13,7 @@ type LinkButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 const variantClasses: Record<NonNullable<LinkButtonProps["variant"]>, string> = {
   primary:
-    "button-shine border border-primary/40 bg-primary text-background shadow-glow hover:-translate-y-0.5 hover:bg-highlight",
+    "button-shine border border-primary/40 bg-primary text-[color:var(--button-primary-text)] shadow-glow hover:-translate-y-0.5 hover:bg-highlight",
   secondary:
     "button-shine border border-white/10 bg-white/5 text-foreground hover:-translate-y-0.5 hover:border-primary/40 hover:bg-white/10",
   ghost:

@@ -233,7 +233,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="button-shine inline-flex items-center justify-center rounded-full border border-primary/40 bg-primary px-6 py-3.5 text-sm font-semibold text-background shadow-glow hover:bg-highlight disabled:cursor-not-allowed disabled:opacity-65"
+          className="button-shine inline-flex items-center justify-center rounded-full border border-primary/40 bg-primary px-6 py-3.5 text-sm font-semibold text-[color:var(--button-primary-text)] shadow-glow hover:bg-highlight disabled:cursor-not-allowed disabled:opacity-65"
         >
           {isSubmitting ? "Sending Inquiry..." : "Send Inquiry"}
         </button>
