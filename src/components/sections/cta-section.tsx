@@ -9,7 +9,7 @@ export function CtaSection() {
           <div className="relative z-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.32em] text-primary">Final CTA</p>
-              <h2 className="section-title pt-4 text-balance">Visit Alakapuri or call for today&apos;s specials</h2>
+              <h2 className="section-title pt-4 text-balance">Visit Alakapuri or call for today&apos;s menu</h2>
               <p className="muted-copy pt-5">
                 The homepage now reflects the real restaurant direction: menu-led, visual, local,
                 and easy to contact.

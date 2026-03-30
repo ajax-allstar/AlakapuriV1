@@ -12,8 +12,8 @@ export function AboutSection() {
           <div>
             <SectionHeader
               eyebrow="Brand Identity"
-              title="The website now reflects the real Alakapuri restaurant brand instead of a hotel-with-stay concept."
-              description="Your uploaded logo, dish posters, and menu boards clearly show Alakapuri as a restaurant business. This section shifts the positioning to local food, family dining, and familiar Kerala favourites instead of accommodation."
+              title="The website now reflects the real Alakapuri Restaurant brand."
+              description="Your uploaded logo, dish posters, and menu boards clearly show Alakapuri as a restaurant business. This section keeps the focus on local food, family dining, and familiar Kerala favourites."
             />
 
             <AnimatedInView delay={0.1}>
@@ -36,11 +36,11 @@ export function AboutSection() {
               <div className="relative z-10 grid gap-5">
                 <div className="luxury-card overflow-hidden">
                   <Image
-                    src="/images/brand/alakapuri-logo.png"
-                    alt="Real Alakapuri Restaurant branding"
-                    width={768}
-                    height={768}
-                    className="h-full w-full object-cover"
+                    src="/images/gallery/rainy-stall-counter.png"
+                    alt="Alakapuri roadside snack counter on a rainy day"
+                    width={621}
+                    height={374}
+                    className="h-full w-full object-cover object-top"
                   />
                 </div>
 

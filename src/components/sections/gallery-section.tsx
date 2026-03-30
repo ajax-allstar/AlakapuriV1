@@ -8,9 +8,9 @@ export function GallerySection() {
     <section id={SECTION_IDS.gallery} className="section-space">
       <div className="section-shell">
         <SectionHeader
-          eyebrow="Photo Gallery"
+          eyebrow="Gallery"
           title="The current website uses your real uploads for dishes, logo, and menu visuals."
-          description="These are the visuals you provided. Real shop photos can be swapped in later without changing the section structure."
+          description="These are the visuals you provided. Real shopfront visuals can be swapped in later without changing the section structure."
           align="center"
         />
 

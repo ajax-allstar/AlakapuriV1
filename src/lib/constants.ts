@@ -1,15 +1,15 @@
 export const SITE = {
-  name: "Hotel Alakapuri",
+  name: "Alakapuri Restaurant",
   shortName: "ALAKAPURI",
   subtitle: "Restaurant Since 1983",
   location: "Nedumkunnam, Kerala 686542, India",
   shortLocation: "Nedumkunnam & Karukachal",
   description:
-    "A long-running restaurant in Nedumkunnam known for porotta, biriyani, Kerala meals, and everyday local favourites.",
+    "A long-running restaurant in Nedumkunnam known for Kerala favourites, dependable service, and everyday local dining.",
   phoneDisplay: "+91 94968 02102",
   phoneHref: "tel:+919496802102",
-  secondaryPhoneDisplay: "+91 91882 02228",
-  secondaryPhoneHref: "tel:+919188202228",
+  secondaryPhoneDisplay: "+91 70250 70277",
+  secondaryPhoneHref: "tel:+917025070277",
   menuDisplay: "hotel-alakapury.business.site",
   menuUrl: "https://hotel-alakapury.business.site",
   hoursDisplay: "Open · Closes 11:00 PM",
@@ -17,12 +17,12 @@ export const SITE = {
   priceRange: "₹1–200 per person",
   serviceOptions: "All you can eat · Vegan options",
   packagePrefill:
-    "Hello Hotel Alakapuri, I would like to enquire about website and branding updates for the restaurant.",
+    "Hello Alakapuri Restaurant, I would like to enquire about website and branding updates for the restaurant.",
   diningPrefill:
-    "Hello Hotel Alakapuri, I would like to enquire about your menu and special dishes.",
-  stayPrefill: "Hello Hotel Alakapuri, I would like to contact your restaurant.",
+    "Hello Alakapuri Restaurant, I would like to enquire about your menu and dining options.",
+  stayPrefill: "Hello Alakapuri Restaurant, I would like to contact your restaurant.",
   contactPrefill:
-    "Hello Hotel Alakapuri, I would like to know more about your restaurant, menu, and timings."
+    "Hello Alakapuri Restaurant, I would like to know more about your restaurant, menu, and timings."
 } as const;
 
 export const SECTION_IDS = {
@@ -38,10 +38,10 @@ export const SECTION_IDS = {
 } as const;
 
 export const NAV_ITEMS = [
-  { label: "Home", href: `#${SECTION_IDS.home}`, id: SECTION_IDS.home },
-  { label: "About", href: `#${SECTION_IDS.about}`, id: SECTION_IDS.about },
-  { label: "Menu", href: `#${SECTION_IDS.menu}`, id: SECTION_IDS.menu },
-  { label: "Gallery", href: `#${SECTION_IDS.gallery}`, id: SECTION_IDS.gallery },
-  { label: "Founders", href: `#${SECTION_IDS.founders}`, id: SECTION_IDS.founders },
-  { label: "Contact", href: `#${SECTION_IDS.contact}`, id: SECTION_IDS.contact }
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Menu", href: "/menu" },
+  { label: "Gallery", href: "/gallery" },
+  { label: "Founders", href: "/founders" },
+  { label: "Contact", href: "/contact" }
 ] as const;

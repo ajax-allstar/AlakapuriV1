@@ -27,16 +27,16 @@ export function HeroSection() {
 
             <AnimatedInView delay={0.14}>
               <h1 className="display-title text-balance pt-8">
-                Kerala favourites, biriyani specials,
+                Kerala favourites, warm service,
                 <span className="block text-gradient-gold">and Alakapuri classics.</span>
               </h1>
             </AnimatedInView>
 
             <AnimatedInView delay={0.2}>
               <p className="muted-copy max-w-2xl pt-6">
-                Hotel Alakapuri is the restaurant brand shown in your real uploads: a local
-                favourite in Nedumkunnam and Karukachal known for porotta specials, biriyani,
-                Kerala meals, and familiar everyday dining since 1983.
+                Alakapuri Restaurant is the brand shown in your real uploads: a local favourite in
+                Nedumkunnam and Karukachal known for Kerala meals, porotta, family dining, and
+                familiar everyday hospitality since 1983.
               </p>
             </AnimatedInView>
 
@@ -55,7 +55,7 @@ export function HeroSection() {
 
             <AnimatedInView delay={0.32}>
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <LinkButton href={`#${SECTION_IDS.menu}`} size="large" prefillMessage={SITE.diningPrefill}>
+                <LinkButton href="/menu" size="large">
                   Explore Menu
                 </LinkButton>
                 <LinkButton href={SITE.phoneHref} variant="secondary" size="large">
@@ -106,49 +106,14 @@ export function HeroSection() {
           <AnimatedInView delay={0.22} className="lg:pl-6">
             <div className="luxury-card mesh-panel p-5 sm:p-6">
               <div className="relative z-10 grid gap-5">
-                <div className="grid gap-5 sm:grid-cols-[1.2fr_0.8fr]">
-                  <div className="luxury-card overflow-hidden">
-                    <Image
-                      src="/images/brand/alakapuri-logo.png"
-                      alt="Real Alakapuri Restaurant branding"
-                      width={768}
-                      height={768}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-
-                  <div className="grid gap-5">
-                    <div className="luxury-card p-5">
-                      <div className="relative z-10">
-                        <p className="text-xs uppercase tracking-[0.34em] text-primary">
-                          Restaurant Since 1983
-                        </p>
-                        <h2 className="pt-3 text-2xl">Real branding, real dishes</h2>
-                        <p className="mt-3 text-sm leading-6 text-[color:var(--text-secondary)]">
-                          This version uses your uploaded Alakapuri visuals instead of the placeholder seal.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="luxury-card overflow-hidden">
-                      <Image
-                        src="/images/gallery/porotta-beef.png"
-                        alt="Porotta and beef special from Alakapuri"
-                        width={768}
-                        height={768}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div className="luxury-card overflow-hidden">
                     <Image
-                      src="/images/gallery/chicken-biriyani.png"
-                      alt="Chicken biriyani special from Alakapuri"
+                      src="/images/gallery/rainy-stall-counter.png"
+                      alt="Alakapuri roadside snack counter on a rainy day"
                       width={768}
                       height={768}
-                      className="h-full w-full object-cover"
+                      className="h-full w-full object-cover object-top"
                     />
                   </div>
                   <div className="luxury-card p-5">

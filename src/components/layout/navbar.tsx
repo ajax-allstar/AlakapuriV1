@@ -3,17 +3,17 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { LinkButton } from "@/components/ui/link-button";
-import { NAV_ITEMS, SECTION_IDS, SITE } from "@/lib/constants";
+import { NAV_ITEMS, SITE } from "@/lib/constants";
 import { cn } from "@/lib/utils";
-import { useActiveSection } from "@/hooks/use-active-section";
-
-const sectionIds = NAV_ITEMS.map((item) => item.id);
 
 export function Navbar() {
-  const { activeId, isScrolled } = useActiveSection(sectionIds);
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
@@ -22,6 +22,23 @@ export function Navbar() {
       document.body.style.overflow = "";
     };
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    const updateScrollState = () => {
+      setIsScrolled(window.scrollY > 18);
+    };
+
+    updateScrollState();
+    window.addEventListener("scroll", updateScrollState, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", updateScrollState);
+    };
+  }, []);
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   const closeMenu = () => setIsMenuOpen(false);
 
@@ -36,18 +53,18 @@ export function Navbar() {
     >
       <div className="section-shell">
         <div className="flex h-20 items-center justify-between gap-4">
-          <a
-            href={`#${SECTION_IDS.home}`}
+          <Link
+            href="/"
             className="group inline-flex items-center gap-4 rounded-full px-2 py-1"
             onClick={closeMenu}
           >
-            <div className="overflow-hidden rounded-full border border-primary/25 bg-black/20">
+            <div className="overflow-hidden rounded-[1.15rem] border border-primary/25 bg-black/30 shadow-[0_18px_45px_rgba(0,0,0,0.28)]">
               <Image
-                src="/images/brand/alakapuri-logo.png"
-                alt="Alakapuri Restaurant logo"
-                width={48}
-                height={48}
-                className="h-12 w-12 object-cover"
+                src="/images/brand/main-icon-for-the-website.png"
+                alt="Alakapuri Restaurant brand mark"
+                width={56}
+                height={56}
+                className="h-14 w-14 object-cover"
               />
             </div>
             <div>
@@ -58,20 +75,20 @@ export function Navbar() {
                 {SITE.subtitle}
               </p>
             </div>
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-2 lg:flex" aria-label="Primary">
             {NAV_ITEMS.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className={cn(
                   "rounded-full px-4 py-2 text-sm font-medium text-[color:var(--text-secondary)] transition-colors hover:text-[color:var(--text-primary)]",
-                  activeId === item.id && "bg-white/6 text-[color:var(--text-primary)]"
+                  pathname === item.href && "bg-white/6 text-[color:var(--text-primary)]"
                 )}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -107,17 +124,17 @@ export function Navbar() {
             <div className="section-shell py-6">
               <nav className="flex flex-col gap-2" aria-label="Mobile primary">
                 {NAV_ITEMS.map((item) => (
-                  <a
+                  <Link
                     key={item.label}
                     href={item.href}
                     className={cn(
                       "rounded-2xl border border-transparent px-4 py-3 text-base font-medium text-[color:var(--text-secondary)] transition-colors hover:border-white/10 hover:bg-white/5 hover:text-[color:var(--text-primary)]",
-                      activeId === item.id && "border-white/10 bg-white/5 text-[color:var(--text-primary)]"
+                      pathname === item.href && "border-white/10 bg-white/5 text-[color:var(--text-primary)]"
                     )}
                     onClick={closeMenu}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 ))}
               </nav>
 

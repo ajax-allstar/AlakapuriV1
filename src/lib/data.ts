@@ -97,8 +97,8 @@ export const offerings: IconItem[] = [
   },
   {
     icon: BellRing,
-    title: "Biriyani Specials",
-    description: "Chicken biriyani, beef biriyani, and crowd-favourite rice dishes are part of the core appeal."
+    title: "Signature Rice Dishes",
+    description: "Well-loved rice dishes and hearty mains add variety for regular visitors, families, and takeaway orders."
   },
   {
     icon: UsersRound,
@@ -120,13 +120,13 @@ export const offerings: IconItem[] = [
 export const diningFeatures: IconItem[] = [
   {
     icon: UtensilsCrossed,
-    title: "Special Porotta & Beef",
-    description: "One of the strongest brand visuals and likely a signature draw for the restaurant."
+    title: "Porotta & Beef",
+    description: "One of the strongest brand visuals and a familiar draw for the restaurant."
   },
   {
     icon: Stars,
-    title: "Special Chicken Biriyani",
-    description: "Rich presentation and familiar local appeal make biriyani an essential featured item."
+    title: "Signature Rice Favourite",
+    description: "Rich presentation and familiar local appeal make this one of the most eye-catching featured dishes."
   },
   {
     icon: ShieldCheck,
@@ -148,7 +148,7 @@ export const menuBoards = [
   },
   {
     src: "/images/menu/menu-board-classic.png",
-    alt: "Classic menu board for Hotel Alakapuri",
+    alt: "Classic menu board for Alakapuri Restaurant",
     label: "Classic Menu"
   }
 ];
@@ -157,12 +157,12 @@ export const founders = [
   {
     role: "Founder",
     name: "Example Founder",
-    note: "Replace this with the real founder name and photo when available."
+    note: "Replace this with the real founder name and details when available."
   },
   {
     role: "Co-Founder",
     name: "Example Co-Founder",
-    note: "Replace this with the real co-founder name and photo when available."
+    note: "Replace this with the real co-founder name and details when available."
   }
 ];
 
@@ -353,28 +353,28 @@ export const whyChooseItems: IconItem[] = [
 
 export const galleryItems = [
   {
-    src: "/images/brand/alakapuri-logo.png",
-    alt: "Alakapuri Restaurant brand poster",
-    label: "Branding"
+    src: "/images/brand/main-icon-for-the-website.png",
+    alt: "Alakapuri Restaurant brand mark",
+    label: "Brand Mark"
   },
   {
     src: "/images/gallery/porotta-beef.png",
-    alt: "Porotta and beef special from Alakapuri Restaurant",
+    alt: "Porotta and beef dish from Alakapuri Restaurant",
     label: "Porotta & Beef"
   },
   {
     src: "/images/gallery/puttu-curry.png",
-    alt: "Puttu and curry special from Alakapuri Restaurant",
+    alt: "Puttu and curry dish from Alakapuri Restaurant",
     label: "Puttu & Curry"
   },
   {
     src: "/images/gallery/chicken-biriyani.png",
-    alt: "Chicken biriyani special from Alakapuri Restaurant",
-    label: "Chicken Biriyani"
+    alt: "Signature rice dish from Alakapuri Restaurant",
+    label: "Signature Rice Dish"
   },
   {
     src: "/images/gallery/masala-dosa.png",
-    alt: "Masala dosa special from Alakapuri Restaurant",
+    alt: "Masala dosa from Alakapuri Restaurant",
     label: "Masala Dosa"
   },
   {
@@ -386,12 +386,12 @@ export const galleryItems = [
 
 export const testimonials = [
   {
-    quote: "Porotta, biriyani, and Kerala-style favourites make this feel like a proper local stop.",
+    quote: "Porotta, Kerala-style favourites, and warm hospitality make this feel like a proper local stop.",
     guest: "Restaurant Example",
     context: "Guest Impression"
   },
   {
-    quote: "The menu range and familiar specials make it easy to recommend for family meals and quick orders.",
+    quote: "The menu range and familiar dishes make it easy to recommend for family meals and quick orders.",
     guest: "Local Example",
     context: "Dining Impression"
   },

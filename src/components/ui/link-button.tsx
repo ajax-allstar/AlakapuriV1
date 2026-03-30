@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { AnchorHTMLAttributes, MouseEvent } from "react";
 import { cn } from "@/lib/utils";
 
@@ -37,14 +38,15 @@ export function LinkButton({
   children,
   ...props
 }: LinkButtonProps) {
+  const isHashLink = href.startsWith("#");
+  const isInternalRouteLink = href.startsWith("/");
+
   const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
     onClick?.(event);
 
     if (event.defaultPrevented) {
       return;
     }
-
-    const isHashLink = href.startsWith("#");
 
     if (!isHashLink && !prefillMessage && !focusTargetId) {
       return;
@@ -82,18 +84,23 @@ export function LinkButton({
     }
   };
 
+  const classes = cn(
+    "inline-flex items-center justify-center rounded-full font-semibold tracking-[0.02em] transition-transform duration-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background active:translate-y-px",
+    variantClasses[variant],
+    sizeClasses[size],
+    className
+  );
+
+  if (isInternalRouteLink) {
+    return (
+      <Link href={href} onClick={handleClick} className={classes} {...props}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <a
-      href={href}
-      onClick={handleClick}
-      className={cn(
-        "inline-flex items-center justify-center rounded-full font-semibold tracking-[0.02em] transition-transform duration-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background active:translate-y-px",
-        variantClasses[variant],
-        sizeClasses[size],
-        className
-      )}
-      {...props}
-    >
+    <a href={href} onClick={handleClick} className={classes} {...props}>
       {children}
     </a>
   );

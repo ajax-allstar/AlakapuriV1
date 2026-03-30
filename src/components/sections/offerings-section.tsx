@@ -9,7 +9,7 @@ export function OfferingsSection() {
         <SectionHeader
           eyebrow="Menu Categories"
           title="A clearer restaurant menu structure based on the uploaded boards."
-          description="The site now highlights the types of food people are likely looking for first: breakfast, meals, biriyani, porotta, veg choices, and delivery-friendly ordering."
+          description="The site now highlights the types of food people are likely looking for first: breakfast, meals, porotta, rice dishes, veg choices, and delivery-friendly ordering."
         />
 
         <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">

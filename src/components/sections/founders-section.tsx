@@ -9,7 +9,7 @@ export function FoundersSection() {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Founder & Co-Founder"
-          title="Example founder cards are included so real names and photos can be added next."
+          title="Example founder cards are included so real names and details can be added next."
           description="You asked for founder and co-founder placeholders for now. These are intentionally marked as examples and can be replaced as soon as you share the real details."
           align="center"
         />

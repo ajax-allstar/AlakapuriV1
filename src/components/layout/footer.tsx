@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LinkButton } from "@/components/ui/link-button";
 import { NAV_ITEMS, SITE } from "@/lib/constants";
 
@@ -12,8 +13,8 @@ export function Footer() {
               {SITE.subtitle}
             </p>
             <p className="muted-copy mt-5 max-w-xl text-[0.98rem]">
-              Hotel Alakapuri is a long-running restaurant in Nedumkunnam serving local favourites,
-              biriyani, porotta specials, and everyday Kerala meals with familiar appeal.
+              Alakapuri Restaurant is a long-running restaurant in Nedumkunnam serving Kerala
+              favourites, familiar everyday meals, and warm local hospitality.
             </p>
           </div>
 
@@ -22,12 +23,12 @@ export function Footer() {
             <ul className="mt-5 space-y-3">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-[color:var(--text-secondary)] hover:text-[color:var(--text-primary)]"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -58,7 +59,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-white/10 pt-6 text-sm text-[color:var(--text-secondary)]">
-          © 2026 Hotel Alakapuri. All rights reserved.
+          © 2026 Alakapuri Restaurant. All rights reserved.
         </div>
       </div>
     </footer>

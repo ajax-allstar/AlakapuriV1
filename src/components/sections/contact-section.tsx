@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Clock3, Globe, MapPin, Phone } from "lucide-react";
 import { AnimatedInView } from "@/components/ui/animated-in-view";
 import { LinkButton } from "@/components/ui/link-button";
@@ -13,7 +12,7 @@ export function ContactSection() {
         <SectionHeader
           eyebrow="Contact & Visit"
           title="Location, number, menu website, and timing details are now part of the live page."
-          description="This section uses the restaurant details from your latest references and keeps a working form ready for future enquiries."
+          description="This section keeps the restaurant details directly on the page and includes a working form for future enquiries."
         />
 
         <div className="mt-12 grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
@@ -39,7 +38,13 @@ export function ContactSection() {
                           {SITE.phoneDisplay}
                         </a>
                         <p className="mt-2 text-[color:var(--text-secondary)]">
-                          Alternate: {SITE.secondaryPhoneDisplay}
+                          Alternate:{" "}
+                          <a
+                            href={SITE.secondaryPhoneHref}
+                            className="hover:text-[color:var(--text-primary)]"
+                          >
+                            {SITE.secondaryPhoneDisplay}
+                          </a>
                         </p>
                       </div>
                     </div>
@@ -99,16 +104,6 @@ export function ContactSection() {
                     Send Inquiry
                   </LinkButton>
                 </div>
-
-                <figure className="luxury-card overflow-hidden">
-                  <Image
-                    src="/images/brand/google-info.png"
-                    alt="Business details screenshot for Alakapuri Restaurant"
-                    width={444}
-                    height={300}
-                    className="h-full w-full object-cover"
-                  />
-                </figure>
               </div>
             </div>
           </AnimatedInView>
