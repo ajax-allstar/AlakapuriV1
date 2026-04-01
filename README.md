@@ -1,4 +1,4 @@
-🏨 Alakapuri
+ Alakapuri
 
 Alakapuri is a modern full-stack web platform built to digitally transform a traditional restaurant and hotel into a smart, user-friendly, and fully online experience.
 
